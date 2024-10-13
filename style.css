@@ -1,0 +1,105 @@
+
+.header {
+    grid-area: header;
+    border-left: 7px solid black; /* Borde izquierdo */
+    border-right: 7px solid black; /* Borde derecho */
+    background: linear-gradient(to bottom, #ffcc00, #000000); /* Degradado de amarillo a negro */
+    padding: 20px;
+    text-align: center; /* Centrando el texto */
+}
+.header h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0; /* Quitar márgenes para mejor alineación */
+}
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0 0; /* Margen superior para separación */
+}
+.nav {
+    grid-area: nav;
+    margin-bottom: 20px;
+}
+.nav .navbar {
+    border: 1px solid #ddd; /* Borde ligero para la barra de navegación */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para la barra de navegación */
+}
+.cont1 {
+    grid-area: cont1;
+    margin-bottom: 20px;
+}
+.cont1 .carousel-inner img {
+    height: 500px; /* Ajustar la altura de las imágenes del carrusel */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+.cont3 {
+    grid-area: cont3;
+    text-align: center; /* Centrando el texto */
+    margin-bottom: 20px;
+    border-left: 7px solid black; /* Borde izquierdo */
+    border-right: 7px solid black; /* Borde derecho */
+    background: linear-gradient(to bottom, #ffcc00, #000000); /* Degradado de amarillo a negro */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-gap: 15px; /* Espacio entre las tarjetas */
+}
+.cont3 h2 {
+    margin-bottom: 20px;
+    color: #ff4757; /* Color para el título de la sección */
+    font-size: 2rem; /* Tamaño de fuente para el título */
+    grid-column: 1 / -1; /* Hacer que el título ocupe todas las columnas */
+}
+.card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para la tarjeta */
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadir transición a la sombra */
+    margin: 0; /* Asegurar que no haya margen alrededor de las tarjetas */
+}
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+.foot {
+    grid-area: foot;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem; /* Tamaño de fuente reducido para el pie de página */
+    color: #666; /* Color del texto del pie de página */
+}
+.btn-group .btn {
+    margin: 5px; /* Espaciado entre botones */
+    font-weight: bold;
+}
+
+/* Colores específicos para botones */
+.btn-danger {
+    background-color: #ff4500; /* Fuego */
+    border: none; /* Sin borde */
+}
+
+.btn-warning {
+    background-color: #ffd700; /* Eléctrico */
+    border: none; /* Sin borde */
+}
+
+.btn-success {
+    background-color: #32cd32; /* Planta */
+    border: none; /* Sin borde */
+}
+
+/* Estilos para títulos y textos */
+.card-title {
+    color: #ff0000; /* Color del título de la tarjeta */
+}
+
+/* Agregar estilos para los enlaces de navegación */
+.nav-link {
+    color: #333; /* Color del texto de los enlaces */
+    font-weight: 500; /* Peso de la fuente para destacar */
+}
+
+.nav-link:hover {
+    color: #ff4757; /* Color del texto al pasar el mouse */
+}
